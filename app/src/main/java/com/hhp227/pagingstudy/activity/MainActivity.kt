@@ -11,7 +11,6 @@ import com.hhp227.pagingstudy.viewmodel.MainViewModel
 import com.hhp227.pagingstudy.viewmodel.MainViewModelFactory
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {

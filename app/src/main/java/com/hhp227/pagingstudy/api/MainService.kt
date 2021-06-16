@@ -7,14 +7,12 @@ import org.json.JSONObject
 import java.nio.charset.Charset
 
 class MainService(private val assets: AssetManager) {
-    fun test(page: Int) = assets.open("sample1.json").use { input ->
+    private fun getJsonData(page: Int) = assets.open("sample$page.json").use { input ->
         ByteArray(input.available()).let { buffer ->
             input.read(buffer)
             String(buffer, Charset.defaultCharset())
         }
     }
-
-    fun getData(pageIndex: Int) = JSONArray(test(pageIndex)).map { jsonObjectToData(it as JSONObject) }
 
     private fun jsonObjectToData(jsonObject: JSONObject): SampleData {
         val id = jsonObject.getInt("id")
@@ -22,6 +20,8 @@ class MainService(private val assets: AssetManager) {
         val image = jsonObject.getString("image")
         return SampleData(id, name, image)
     }
+
+    fun getData(pageIndex: Int) = JSONArray(getJsonData(pageIndex)).map { jsonObjectToData(it as JSONObject) }
 
     private inline fun <reified T> JSONArray.map(transform: (Any) -> T): List<T> {
         return List(this.length()) { i ->
