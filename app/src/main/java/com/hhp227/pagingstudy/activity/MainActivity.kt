@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
+import androidx.paging.LoadState
 import com.hhp227.pagingstudy.R
 import com.hhp227.pagingstudy.adapter.SampleListAdapter
 import com.hhp227.pagingstudy.adapter.SampleLoadStateAdapter

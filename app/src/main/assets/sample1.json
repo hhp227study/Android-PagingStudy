@@ -1,67 +1,67 @@
 [
     {
         "id": 0,
-        "name": "123",
+        "name": "안드로이드",
         "image": "null"
     },
     {
         "id": 1,
-        "name": "456",
+        "name": "iOS",
         "image": "null"
     },
     {
         "id": 2,
-        "name": "789",
+        "name": "홍희표",
         "image": "null"
     },
     {
         "id": 3,
-        "name": "asd",
+        "name": "김용대",
         "image": "null"
     },
     {
         "id": 4,
-        "name": "qwe",
+        "name": "유효진",
         "image": "null"
     },
     {
         "id": 5,
-        "name": "rty",
+        "name": "이청우",
         "image": "null"
     },
     {
         "id": 6,
-        "name": "asd",
+        "name": "안드로이드 앱 스터디",
         "image": "null"
     },
     {
         "id": 7,
-        "name": "fgh",
+        "name": "iOS 앱 스터디",
         "image": "null"
     },
     {
         "id": 8,
-        "name": "zxc",
+        "name": "프로젝트: IPO Today",
         "image": "null"
     },
     {
         "id": 9,
-        "name": "vbn",
+        "name": "만나서",
         "image": "null"
     },
     {
         "id": 10,
-        "name": "jkl",
+        "name": "반갑습니다.",
         "image": "null"
     },
     {
         "id": 11,
-        "name": "yui",
+        "name": "Java",
         "image": "null"
     },
     {
         "id": 12,
-        "name": "ert",
+        "name": "Kotlin",
         "image": "null"
     }
 ]
