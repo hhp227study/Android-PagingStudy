@@ -3,12 +3,15 @@ package com.hhp227.pagingstudy.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
+import androidx.paging.LoadState
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.hhp227.pagingstudy.R
 import com.hhp227.pagingstudy.model.SampleData
 import kotlinx.android.extensions.LayoutContainer
+import kotlinx.android.synthetic.main.item_load_state.view.*
 import kotlinx.android.synthetic.main.item_sample.view.*
 
 class SampleListAdapter : PagingDataAdapter<SampleData, SampleListAdapter.SampleViewHolder>(SampleDiffCallback()) {
@@ -23,6 +26,12 @@ class SampleListAdapter : PagingDataAdapter<SampleData, SampleListAdapter.Sample
     inner class SampleViewHolder(override val containerView: View) : RecyclerView.ViewHolder(containerView), LayoutContainer {
         fun bind(data: SampleData?) {
             containerView.title.text = data?.name
+
+            if (!data?.image.isNullOrEmpty()) {
+                containerView.resources
+                    .getIdentifier(data?.image, "drawable", containerView.context.packageName)
+                    .also { resId -> containerView.image_view.setImageResource(resId) }
+            }
         }
     }
 }

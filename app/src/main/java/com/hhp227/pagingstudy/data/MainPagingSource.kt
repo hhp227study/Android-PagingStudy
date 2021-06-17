@@ -18,13 +18,15 @@ class MainPagingSource(private val mainService: MainService) : PagingSource<Int,
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, SampleData> {
         val page: Int = params.key ?: 1
         val result = mainService.getData(page)
+
+        Log.i("TEST", "result: $result, page: $page")
         return try {
             LoadResult.Page(
                 data = result,
                 prevKey = if (page == 1) null else page - 1,
                 nextKey = if (result.isEmpty()) null else page + 1
             )
-        } catch (e: IOException) {
+        } catch (e: Exception) {
             LoadResult.Error(e)
         }
     }

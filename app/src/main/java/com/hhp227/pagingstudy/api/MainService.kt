@@ -4,7 +4,9 @@ import android.content.res.AssetManager
 import com.hhp227.pagingstudy.model.SampleData
 import org.json.JSONArray
 import org.json.JSONObject
+import java.io.FileNotFoundException
 import java.nio.charset.Charset
+import kotlin.jvm.Throws
 
 class MainService(private val assets: AssetManager) {
     private fun getJsonData(page: Int) = assets.open("sample$page.json").use { input ->
@@ -21,7 +23,11 @@ class MainService(private val assets: AssetManager) {
         return SampleData(id, name, image)
     }
 
-    fun getData(pageIndex: Int) = JSONArray(getJsonData(pageIndex)).map { jsonObjectToData(it as JSONObject) }
+    fun getData(pageIndex: Int) = try {
+        JSONArray(getJsonData(pageIndex)).map { jsonObjectToData(it as JSONObject) }
+    } catch (e: Exception) {
+        emptyList()
+    }
 
     private inline fun <reified T> JSONArray.map(transform: (Any) -> T): List<T> {
         return List(this.length()) { i ->

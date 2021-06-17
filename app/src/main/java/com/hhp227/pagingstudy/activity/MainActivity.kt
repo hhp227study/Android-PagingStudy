@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import com.hhp227.pagingstudy.R
 import com.hhp227.pagingstudy.adapter.SampleListAdapter
+import com.hhp227.pagingstudy.adapter.SampleLoadStateAdapter
 import com.hhp227.pagingstudy.data.MainRepository
 import com.hhp227.pagingstudy.viewmodel.MainViewModel
 import com.hhp227.pagingstudy.viewmodel.MainViewModelFactory
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         recycler_view.apply {
             adapter = SampleListAdapter().apply {
+                withLoadStateFooter(SampleLoadStateAdapter())
                 lifecycleScope.launch {
                     viewModel.getSampleData().collect {
                         submitData(it)

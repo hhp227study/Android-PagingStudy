@@ -2,66 +2,66 @@
     {
         "id": 0,
         "name": "123",
-        "image": "@drawable/ic_cloud_download_black_24dp"
+        "image": "null"
     },
     {
         "id": 1,
         "name": "456",
-        "image": "@drawable/ic_arrow_forward_black_24dp"
+        "image": "null"
     },
     {
         "id": 2,
         "name": "789",
-        "image": "@drawable/ic_photo_camera_black_24dp"
+        "image": "null"
     },
     {
         "id": 3,
         "name": "asd",
-        "image": "@drawable/ic_alarm_off_black_24dp"
+        "image": "null"
     },
     {
         "id": 4,
         "name": "qwe",
-        "image": "@drawable/ic_assignment_black_24dp"
+        "image": "null"
     },
     {
         "id": 5,
         "name": "rty",
-        "image": "@drawable/ic_map_black_24dp"
+        "image": "null"
     },
     {
         "id": 6,
         "name": "asd",
-        "image": "@drawable/ic_sms_black_24dp"
+        "image": "null"
     },
     {
         "id": 7,
         "name": "fgh",
-        "image": "@drawable/ic_print_black_24dp"
+        "image": "null"
     },
     {
         "id": 8,
         "name": "zxc",
-        "image": "@drawable/ic_library_books_black_24dp"
+        "image": "null"
     },
     {
         "id": 9,
         "name": "vbn",
-        "image": "@drawable/ic_settings_black_24dp"
+        "image": "null"
     },
     {
         "id": 10,
         "name": "jkl",
-        "image": "@drawable/ic_android_black_24dp"
+        "image": "null"
     },
     {
         "id": 11,
         "name": "yui",
-        "image": "@drawable/ic_tv_black_24dp"
+        "image": "null"
     },
     {
         "id": 12,
         "name": "ert",
-        "image": "@drawable/ic_exit_to_app_black_24dp"
+        "image": "null"
     }
 ]

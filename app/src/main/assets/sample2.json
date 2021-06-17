@@ -1,62 +1,62 @@
 [
     {
         "id": 13,
-        "name": "hello",
-        "image": ""
+        "name": "이달의 소녀 츄1",
+        "image": "chew01"
     },
     {
         "id": 14,
-        "name": "456",
-        "image": "@drawable/ic_arrow_forward_black_24dp"
+        "name": "이달의 소녀 츄2",
+        "image": "chew02"
     },
     {
         "id": 15,
-        "name": "789",
-        "image": "@drawable/ic_photo_camera_black_24dp"
+        "name": "이달의 소녀 츄3",
+        "image": "chew03"
     },
     {
         "id": 16,
-        "name": "asd",
-        "image": "@drawable/ic_alarm_off_black_24dp"
+        "name": "이달의 소녀 츄4",
+        "image": "chew04"
     },
     {
         "id": 17,
-        "name": "qwe",
-        "image": "@drawable/ic_assignment_black_24dp"
+        "name": "이달의 소녀 츄5",
+        "image": "chew05"
     },
     {
         "id": 18,
-        "name": "rty",
-        "image": "@drawable/ic_map_black_24dp"
+        "name": "이달의 소녀 츄6",
+        "image": "chew06"
     },
     {
         "id": 19,
-        "name": "asd",
-        "image": "@drawable/ic_sms_black_24dp"
+        "name": "이달의 소녀 츄7",
+        "image": "chew07"
     },
     {
         "id": 20,
-        "name": "fgh",
-        "image": "@drawable/ic_print_black_24dp"
+        "name": "이달의 소녀 츄8",
+        "image": "chew08"
     },
     {
         "id": 21,
-        "name": "zxc",
-        "image": "@drawable/ic_library_books_black_24dp"
+        "name": "이달의 소녀 츄9",
+        "image": "chew09"
     },
     {
         "id": 22,
-        "name": "vbn",
-        "image": "@drawable/ic_settings_black_24dp"
+        "name": "이달의 소녀 츄10",
+        "image": "chew10"
     },
     {
         "id": 23,
-        "name": "jkl",
-        "image": "@drawable/ic_android_black_24dp"
+        "name": "이달의 소녀 츄11",
+        "image": "chew11"
     },
     {
         "id": 24,
-        "name": "yui",
-        "image": "@drawable/ic_tv_black_24dp"
+        "name": "이달의 소녀 츄12",
+        "image": "chew12"
     }
 ]
